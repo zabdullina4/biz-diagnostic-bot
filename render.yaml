@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: biz-diagnostic-bot-worker
+    env: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m app.bot
+    autoDeploy: true
+
+# Cron jobs на Render создаются как отдельный service type (cron job) через Dashboard,
+# но YAML оставим как подсказку (Render сейчас чаще настраивают cron через UI).
