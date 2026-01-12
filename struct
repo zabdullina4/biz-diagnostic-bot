@@ -1,0 +1,14 @@
+biz-diagnostic-bot/
+  app/
+    __init__.py
+    bot.py
+    db.py
+    models.py
+    nlp.py
+    reports.py
+    cron_daily.py
+    cron_summary.py
+  requirements.txt
+  render.yaml
+  README.md
+  .env.example
